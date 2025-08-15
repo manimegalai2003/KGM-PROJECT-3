@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        .c1{
+            background-image: linear-gradient(to right, purple, pink, purple);
+           
+        }
+        .c1 a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 600px;
+           
+        }
+        .c1 img{
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="c1">
+    <nav class="navbar">
+ <img class="navbar-brand"  src="b1.jpg" alt="" width="50" height="50" style="border-radius: 50%;"> 
+</nav>
+<a href="home.html">Home</a>
+ <a href="login.html" style="margin-left: 200px;">Logout</a>
+</div>
+<br><br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h2>Products For You</h2>
+                <br>
+                <div class="dropdown">
+                    <button class="alert alert-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 200px;">
+                       <h6><Span style="color: grey;">Sort by:</Span> Relevance</h6>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                        <li><a class="dropdown-item" href="#">Price (High to Low)</a></li>
+                        <li><a class="dropdown-item" href="#">Price (Low to High)</a></li>
+                        <li><a class="dropdown-item" href="#">Ratings</a></li>
+                        <li><a class="dropdown-item" href="#">Discount</a></li>
+
+                    </ul>
+                </div>
+                <hr style="width: 250px;">
+                <h3>Category</h3>
+                <div class="dropdown">
+                <button class="alert alert-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 200px;">
+                    <h5>Category</h5></button>
+                <br><br>
+                <ul class="dropdown-menu">
+                <li>
+                    <div class="dropdown-item"><div class="checkbox">
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1">Accessories</label>
+                </div>
+                <br>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2">Bags & Backpacks</label>
+            </div>
+            <br>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox3">
+                    <label for="checkbox3">Clothing</label>
+                </div>
+                <br>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox4">
+                    <label for="checkbox4">Footwear</label>
+                </div>
+                <br>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox5">
+                    <label for="checkbox5">Headphones</label>
+                </div>
+                <br>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox6">
+                    <label for="checkbox6">Laptops & Notebooks</label>
+                    </div>
+                    <br>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox7">
+                    <label for="checkbox7">Mobiles & Accessories</label>
+                    </div>
+                    <br>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox8">
+                    <label for="checkbox8">Smartwatches</label>
+                    </div>
+                    <br>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox9">
+                    <label for="checkbox9">Sports & Outdoors</label>
+                    </div>
+                    <br>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox10">
+                    <label for="checkbox10">Tablets</label>
+                    </div>
+                </li>
+                </ul>    
+        </div>
+         <hr style="width: 250px;">
+         <h3>Gender</h3>
+         <div class="radio">
+            <button class="alert alert-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 200px;">
+                    <h5>Gender</h5></button>
+                <br><br>
+                <ul class="dropdown-menu">
+                    <li>
+                        <div class="dropdown-item">
+                            <input type="radio" name="gender" value="male" class="form-check-input" checked> Girls
+                        </div>
+                        <br>
+                        <div class="dropdown-item">
+                            <input type="radio" name="gender" value="female" class="form-check-input" checked> Boys
+                        </div>
+                        <br> <div class="dropdown-item">
+                            <input type="radio" name="gender" value="male" class="form-check-input" checked> Women
+                        </div>
+                        <br>
+                        <div class="dropdown-item">
+                            <input type="radio" name="gender" value="female" class="form-check-input" checked> Men
+                        </div>
+
+                    </li>
+                </ul>
+         </div>
+        <hr style="width: 250px;">
+         <h3>Price</h3>
+         <ul>
+            <li style="list-style: none;">
+                <p>1000 - 5000</p>
+    <input type="range" min="0" max="5" step="0.5" class="form-range" style="width: 200px;">
+
+            </li>
+         </ul>
+        </div> 
+          
+    <!-- <div class="form-switch">
+        <input type="checkbox" name="" id="" class="form-check-input">
+    </div>
+    <br><br> -->
+    <div class="col-md-9">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 200px;">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQE33HuZnnBfpQpE8F8c-cH8Jk8qUXHCx6Zf0YN6NslcXwCLESx7vT8fj0mIDLdstX_TWiqgd4OimWbsaFNM2Y6coVqilFvG6Nx90RkTFgmcE70mYb3-cCm" class="card-img-top" height="200px" width="100px">
+                    <div class="card-body">
+                        <h5>Frocks & Dress</h5>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 1000</p>
+                        <p>Free Delivery</p>
+                        <button class="btn btn-success">Add to Cart</button> <br>
+                        4000 Reviews
+                        
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3">
+                <div class="card" style="width: 200px;">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSjVUc0w5wiuaUkqKEhp6eu4kjw0Akz34Z-LBz-dOx2q_B0vEPv1UOQP_4ojsEZt-ThEmaceivU1m3hXBQ5vPisSOoPioompDH3IwFWPHI2ZZo7PforQ8bz" class="card-img-top" height="200px" width="100px">
+                    <div class="card-body">
+                        <h5>Tops & Bottom Set</h5>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 800</p>
+                        <p>Free Delivery</p>
+                        <button class="btn btn-success">Add to Cart</button> <br>
+                        4000 Reviews
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 200px;">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTrp5cIob9gWrpbqP3gPbu1j1mlxmaI0jgvvaL7rFjEaMPA-8bLDqRz45_NPigiM2742MNgdmooySMYnJr6qg9xywAOfs0ZaJaP93uNn-81_UnQbh1F-gip" class="card-img-top" height="200px" width="100px">
+                    <div class="card-body">
+                        <h5>Girls Kurta Set</h5>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 500</p>
+                        <p>Free Delivery</p>
+                        <button class="btn btn-success">Add to Cart</button> <br>
+                        4000 Reviews
+                        
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3">
+                <div class="card" style="width: 200px;">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQLhMzlGefZeosYTocxT-a1JQc9ikFHO-RJSW2gth8WbxCvddAk0y6FHjwYVr3cbrT75IAj1P1LbeZO97I38NQAUC4MeXo5KnuvMGPjepLO54rBWwBQgjSl" class="card-img-top" height="200px" width="100px">
+                    <div class="card-body">
+                        <h5>Girls Pants</h5>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 300</p>
+                        <p>Free Delivery</p>
+                        <button class="btn btn-success">Add to Cart</button> <br>
+                        4000 Reviews
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+         <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 200px;">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRmbLo8JNGLoHffYgzVwOOf3OrPCvdp1ObGgdMHg1gkj1XTLnCYUvyb3KlPFi9UJalgWTkFfOYN3KHQalZUHb9BfVEkHRb2bLUcbr1zacW5Jqt3J7bo1EBX" class="card-img-top" height="200px" width="100px">
+                    <div class="card-body">
+                        <h5>Boys Top & Bottom Set</h5>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 200</p>
+                        <p>Free Delivery</p>
+                        <button class="btn btn-success">Add to Cart</button> <br>
+                        4000 Reviews
+                        
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3">
+                <div class="card" style="width: 200px;">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRYsc8Xm2H_r_ej8eOuCC5B8Va6QwIV8yeyRg7KFl7cPRnjkfocGjRwAGGwx8uFzK6nNT4II-21pK2B_QmJ8oelPGnoLSFFhMB-ohVa3FjoxZPxH1B_Ty5N9g" class="card-img-top" height="200px" width="100px">
+                    <div class="card-body">
+                        <h5>Boys T-shirt</h5>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 400</p>
+                        <p>Free Delivery</p>
+                        <button class="btn btn-success">Add to Cart</button> <br>
+                        4000 Reviews
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 200px;">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT802itHn-GT_rm6xZojR5A2V0fDGyuU2cQtB9U2h-thdWKYzG5UhM3KiBxiJbriEdpjNIT4fjLV3juenmZSGJt1sdRznJqVHCRd5jNHL8wzjwEF2wCDPRj" class="card-img-top" height="200px" width="100px">
+                    <div class="card-body">
+                        <h5>Boys Shorts</h5>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 160</p>
+                        <p>Free Delivery</p>
+                        <button class="btn btn-success">Add to Cart</button> <br>
+                        4000 Reviews
+                        
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3">
+                <div class="card" style="width: 200px;">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRl1MujE1besvDqRamM-L-cwWo_lQd_ZRTWY-yWUxDhXmib-xGaA7IBPHY6mKq0Lq4STR8emzcoabbQ1wgOSqRQtixht6PPkmb7yBTEssA5IcJhwzxrNDnMvA" class="card-img-top" height="200px" width="100px">
+                    <div class="card-body">
+                        <h5>Boys shirts</h5>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 600</p>
+                        <p>Free Delivery</p>
+                        <button class="btn btn-success">Add to Cart</button> <br>
+                        4000 Reviews
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br> <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 200px;">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSs1YfRsAinun_ofj4x5YeM_AxqhvIbfhmwazFwVFz-TNuHPLPNEj5GdAFOgIMAEvS2VHgvgVrF389PanNLRpURo2dArOnV-I6lvYSTMsY" class="card-img-top" height="200px" width="100px">
+                    <div class="card-body">
+                        <h5>Women Kurtis</h5>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 300</p>
+                        <p>Free Delivery</p>
+                        <button class="btn btn-success">Add to Cart</button> <br>
+                        4000 Reviews
+                        
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3">
+                <div class="card" style="width: 200px;">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRLNV4UjbhYda3jY8xbhoFJiqXRocYVNKVV45B29-wmfYsk9RWATAK7CSXYtKH6de7KrLtuczcoB6ZMQmlktynTJuHW402APTuD3Xox8pQWZRBZ1OutpvXc" class="card-img-top" height="200px" width="100px">
+                    <div class="card-body">
+                        <h5>Saree</h5>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 350</p>
+                        <p>Free Delivery</p>
+                        <button class="btn btn-success">Add to Cart</button> <br>
+                        4000 Reviews
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 200px;">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS5FqoXaaSWYag2KK2DlZiPlB8Cuo7pheJQH2zMzYiQDm539ksnsKy-R9dY5_BLZ98T55N46zg3Pfw2hyJ15PVXaRaYYIKM4sdzIIN_YtcQogULNyRwbxAH" class="card-img-top" height="200px" width="100px">
+                    <div class="card-body">
+                        <h5>Women Kurti Sets</h5>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 500</p>
+                        <p>Free Delivery</p>
+                        <button class="btn btn-success">Add to Cart</button> <br>
+                        4000 Reviews
+                        
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3">
+                <div class="card" style="width: 200px;">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTbn86WGDxcejibSjEyjihuzycOa69431dm-afsZYmoD7pX0KgKd8cS0bn1D2dRbYo64aQ6Ns804VuigaDDqAUed5oh8rMHXjqDtKbPtXkL" class="card-img-top" height="200px" width="100px">
+                    <div class="card-body">
+                        <h5>Dupatta Sets</h5>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 600</p>
+                        <p>Free Delivery</p>
+                        <button class="btn btn-success">Add to Cart</button> <br>
+                        4000 Reviews
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br> <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 200px;">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS3wcjBx3pQvUEdi8eL3bM99R2T6bNQ6JPyvQj-SN1DlN0n49U43LcOZ35clrLVJCcTclwZHfh6czcGlBThXbwms9_4xOIcctBOB65Fem6v" class="card-img-top" height="200px" width="100px">
+                    <div class="card-body">
+                        <h5>Men Shirts</h5>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 100</p>
+                        <p>Free Delivery</p>
+                        <button class="btn btn-success">Add to Cart</button> <br>
+                        4000 Reviews
+                        
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3">
+                <div class="card" style="width: 200px;">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTAU1F_F8Fw3V664aTGObSg8RdFB2xAtMNQgOpGMWnJvdMCP3Bn31Twkfaita5WaG9Hlvh3szQEPI_SXHAntHMk5ONCEbPz9Fy6SfFFNZM" class="card-img-top" height="200px" width="100px">
+                    <div class="card-body">
+                        <h5>Mens Cotton Tshirts</h5>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 210</p>
+                        <p>Free Delivery</p>
+                        <button class="btn btn-success">Add to Cart</button> <br>
+                        4000 Reviews
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 200px;">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSGBhJU8y3uewMpJDh4A1B5yoaiUN8BEfo26_mPlhLVYxkWwP3rHvR3kCZZVE6PVscTWqFtp0Nq0aOv224l7SReNfAD3DV06Sm0ZAzA8u_oCRFI4qgJPNZQOQ" class="card-img-top" height="200px" width="100px">
+                    <div class="card-body">
+                        <h5>Black Jeans</h5>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 1000</p>
+                        <p>Free Delivery</p>
+                        <button class="btn btn-success">Add to Cart</button> <br>
+                        4000 Reviews
+                        
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3">
+                <div class="card" style="width: 200px;">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRpWxb30yRIPo-2GvnVMIaPg7fxLcNdXamAFKMamNdOHhWY8a6_KWZMgCKLcvISeS7jBWuumOSqt6MU78e6ZiC95GmEZDkxpR6omq1gZZFq43VTqAri5naOmA" class="card-img-top" height="200px" width="100px">
+                    <div class="card-body">
+                        <h5>Cotton Blend Tshirts</h5>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i> 300</p>
+                        <p>Free Delivery</p>
+                        <button class="btn btn-success">Add to Cart</button> <br>
+                        4000 Reviews
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+ </div>
+    
+
+</body>
+</html>

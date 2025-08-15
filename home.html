@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    .c1 a{
+        text-decoration: none;
+        color: black;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        
+        justify-content: space-around;
+    }
+    header{
+        display: flex;
+        justify-content:space-around;
+       font-size: 25px;
+        background-color: rgb(245, 245, 245);
+       padding: 20px;
+       height: 75px;
+    }
+    .offcanva{
+      margin-top: 100px;
+    }
+    .btn-light{
+      height: 50px;
+      width: 100%;
+      border: 1px solid black;
+    }
+
+    .c1 p{
+      margin-left: 50px;
+      font-weight: bold;
+    }
+
+    .c1 img{
+      height: 200px;
+      width: 200px;
+      border: 4px solid purple;
+    }
+    .c1 img:hover{
+      transform: scale(1.1);
+      transition: 1s;
+      cursor: pointer;
+    }
+    .c2{
+      border-radius: 10px;
+      background-color: rgb(234, 231, 234);
+    }
+    .c2 i{
+      color: purple;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .c2 p{
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .c3{
+      background-image: url('1.webp');
+      background-size: cover;
+      background-position: center;
+      height: 510px;
+    }
+
+    .c3 button{
+      background-color: white;
+      color: rgb(178, 102, 34);
+      height: 70px;
+      width: 140px;
+      border-radius: 10px;
+      margin-top: 420px;
+      margin-left: 300px;
+    }
+    .c3 button:hover{
+      background-color: rgb(178, 102, 34);
+      color: black;
+    }
+    .c3 img{
+      height: 200px;
+      width: 200px;
+      margin-top: 10px;
+      margin-left: 50px;
+      border-radius: 15px;
+      border: 2px solid white;
+    }
+    .c3 img:hover{
+      transform: scale(1.1);
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    .c3 p{
+      margin-left: 120px;
+      font-weight: bold;
+      color: white;
+      margin-top: 10px;
+    }
+    .modal-body li{
+      font-size: 14px;
+    }
+    .c4 button{
+       height: 40px;
+        width: 150px;
+    }
+
+    .c5 img{
+      height: 400px;
+      width: 100%;
+      border: 3px solid black;
+      border-radius: 10px;
+    }
+
+    footer{
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      padding-top: 20px;
+    }
+    .c6 a, p{
+      font-weight: bold;
+      margin-left: 30px;
+      text-decoration: none;
+    }
+</style>
+</head>
+<body>
+    <div class="container-fluid">
+        <header> 
+           <h1>Zyraa</h1>
+           
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <form class="d-flex">
+      <span class="input-group-text bg-white border-end-0">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </span>
+      <input type="search" class="form-control me-2" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-warning" type="submit">Search...</button>
+    </form>
+  </div>
+</nav>
+<div class="c4">
+  <a href="product.html" class="link-warning" style="text-decoration: none; color: white;"><button class="btn btn-dark">Products</a></button>
+  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-user"></i> Profile</button>
+ <div class="modal fade" id="exampleModal" >
+ <div class="modal-dialog">
+ <div class="modal-content">
+ <div class="modal-header">
+ <h1 class="modal-title fs-5" id="exampleModalLabel">Hello User <br> <p style="color: grey;">To access your account</p><br><a href="login.html"><button style="height: 50px; width: 300px; margin-left: 80px; color: white; font-weight: bold;" class="btn btn-dark">Sign In</button></a></h1>
+ <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+ </div>
+ <div class="modal-body">
+  <p><i class="fa-solid fa-bag-shopping"></i> My Orders</p>
+  <hr>
+  <a href="login.html" class="link-danger">Delete Account</a>
+  </div>
+ </div>
+ </div>
+ </div>
+  
+
+
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" 	data-bs-target="#notification"> Notifications <span class="badge text-bg-danger">4</span>  </button>
+ <div class="modal fade" id="notification" >
+ <div class="modal-dialog">
+ <div class="modal-content">
+ <div class="modal-header">
+ <h1 class="modal-title fs-5" id="examplenotification">Notifications</h1>
+ <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+ </div>
+ <div class="modal-body">
+  <ul>
+    <li><i class="fa-solid fa-fire" style="color: rgb(255, 94, 0);"></i> Sizzling Aadi Sale Starts Now!</li>
+    <li><i class="fa-solid fa-star" style="color: rgb(220, 174, 48);"></i> Don't Miss Out on this Special Sale!</li>
+    <li><i class="fa-solid fa-bag-shopping" style="color: palevioletred;"></i> Dive into the world of Aadi and experience the best of it!</li>
+    <li><i class="fa-solid fa-star" style="color: rgb(220, 174, 48);"></i> Don't miss out this incredible opportunity to explore the world of Aadi!</li>
+    <li><i class="fa-solid fa-fire" style="color: rgb(249, 97, 42);"></i> Don't miss out on this amazing opportunity to explore the world of Aadi!</li>
+  </ul>
+ </div>
+ </div>
+ </div>
+ </div>
+           <a href="cart.html" > <button  class="btn btn-dark"><i class="fa-solid fa-cart-shopping"></i> Cart</button></a>
+           
+           <button type="button" class="btn btn-dark" data-bs-toggle="modal" 	data-bs-target="#login">Login</button>
+ <div class="modal fade" id="login" >
+ <div class="modal-dialog">
+ <div class="modal-content">
+ <div class="modal-header">
+ <h1 class="modal-title fs-5" id="examplenotification">Login</h1>
+ <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+ </div>
+ <div class="modal-body">
+  <h6>To Access Your Account, Please Login...!</h6>
+  <div class="alert alert-danger" role="alert">
+ <a href="login.html" class="link-warning">Login</a>
+  </div>
+ </div>
+ </div>
+ </div>
+ </div>
+<a href="login.html"><button class="btn btn-dark">Logout</button></a>
+ 
+           </div>
+        </header>
+         </div>
+
+        <br>
+
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-md-2">
+      <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEthnic">Women Ethnic</button>
+      <div class="offcanvas offcanvas-top" id="offcanvasEthnic">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        <div class="offcanvas-body">
+          <div class="row">
+            <div class="col-md-2">
+              <ul>
+        <li style="color: purple; font-weight: bold;">Sarees</li>
+        <br>
+        <li>All sarees</li>
+        <br>
+        <li>SilK Sarees</li>
+        <br>
+        <li>Banarasi Sarees</li>
+        <br>
+        <li>Cotton Sarees</li>
+        <br>
+        <li>Georgette Sarees</li>
+        <br>
+        <li>Chiffon Sarees</li>
+        <br>
+        <li>Heavy Work Sarees</li>
+        <br>
+        <li>Net Sarees</li>
+      </ul>
+    
+</div>
+
+  
+<div class="col-md-2">
+  
+      <ul>
+        <li style="color: purple; font-weight: bold;">Kurtis</li>
+        <br>
+        <li>All Kurtis</li>
+        <br>
+        <li>Anarkali Kurtis</li>
+        <br>
+        <li>Rayon Kurtis</li>
+        <br>
+        <li>Cotton Kurtis</li>
+        <br>
+        <li>Chikankari Kurtis</li>
+      </ul>
+    </div>
+
+<div class="col-md-2">
+  
+      <ul>
+        <li style="color: purple; font-weight: bold;">Kurta Sets</li>
+        <br>
+        <li>All Kurta Sets</li>
+        <br>
+        <li>Kurta Palazzo Sets</li>
+        <br>
+        <li>Rayon Kurta Sets</li>
+        <br>
+        <li>Cotton Kurta Sets</li>
+        <br>
+        <li>Kurta Pant Sets</li>
+        <br>
+        <li>Sharara Sets</li>
+      </ul>
+    </div>
+
+<div class="col-md-2">
+  
+      <ul>
+        <li style="color: purple; font-weight: bold;">Dupatta Sets</li>
+        <br>
+        <li>All Dupatta Sets</li>
+        <br>
+        <li>Rayon Sets</li>
+        <br>
+        <li>Cotton Sets</li>
+        <br>
+        <li>Printed Sets</li>
+      </ul>
+    </div>
+
+<div class="col-md-2">
+      <ul>
+        <li style="color: purple; font-weight: bold;">Suits & Dress Materials</li>
+        <br>
+        <li>All Suits & Dress Materials</li>
+        <br>
+        <li>Embroiddered Suits</li>
+        <br>
+        <li>Cotton Suits</li>
+        <br>
+        <li>Crepe Suits</li>
+        <br>
+        <li>Silk Suits</li>
+        <br>
+        <li>Patiala Suits</li>
+      </ul>
+    </div>
+
+<div class="col-md-2">
+ <ul>
+        <li style="color: purple; font-weight: bold;">Lehenga</li>
+        <br>
+        <li>All Lehenga</li>
+        <br>
+        <li>Lehanga Choli</li>
+        <br>
+        <li>Net Lehanga</li>
+        <br>
+        <li>Bride Lehanga</li>
+      </ul>
+    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-md-2">
+      <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWestern">Women Western</button>
+      <div class="offcanvas offcanvas-top" id="offcanvasWestern">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        <div class="offcanvas-body">
+          <div class="row">
+            <div class="col-md-4">
+              <ul>
+        <li style="color: purple; font-weight: bold;">TopWear</li>
+        <br>
+        <li>All TopWear</li>
+        <br>
+        <li>Tops</li>
+        <br>
+        <li>Dresses</li>
+        <br>
+        <li>T-Shirt</li>
+        <br>
+        <li>Jumpsuits</li>
+      </ul>
+</div>
+
+  
+<div class="col-md-4">
+  
+      <ul>
+        <li style="color: purple; font-weight: bold;">BottomWear</li>
+        <br>
+        <li>All BottomWear</li>
+        <br>
+        <li>Jeans & Jeggings</li>
+        <br>
+        <li>Palazzo</li>
+        <br>
+        <li>Shorts</li>
+        <br>
+        <li>Skirts</li>
+      </ul>
+    </div>
+
+<div class="col-md-4">
+  
+      <ul>
+        <li style="color: purple; font-weight: bold;">Sleepwear</li>
+        <br>
+        <li>Nightsuits</li>
+        <br>
+        <li>Women Nightdress</li>
+      </ul>
+    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasmen">Men</button>
+      <div class="offcanvas offcanvas-top" id="offcanvasmen">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        <div class="offcanvas-body">
+          <div class="row">
+            <div class="col-md-4">
+              <ul>
+        <li style="color: purple; font-weight: bold;">Top Wear</li>
+        <br>
+        <li>All TopWear</li>
+        <br>
+        <li>Shirts</li>
+        <br>
+        <li>Winter Wear</li>
+        <br>
+        <li>Jackets</li>
+        <br>
+        <li>T-Shirt</li>
+        <br>
+        <li>
+          sweatshirts
+        </li>
+      </ul>
+</div>
+
+  
+<div class="col-md-4">
+  
+      <ul>
+        <li style="color: purple; font-weight: bold;">Bottom Wear</li>
+        <br>
+        <li>All BottomWear</li>
+        <br>
+        <li>Jeans</li>
+        <br>
+        <li>Track Pants</li>
+        <br>
+        <li>Shorts</li>
+        <br>
+        <li>Trousers</li>
+      </ul>
+    </div>
+
+<div class="col-md-4">
+  
+      <ul>
+        <li style="color: purple; font-weight: bold;">Men Accessories</li>
+        <br>
+        <li>Men Accessories</li>
+        <br>
+        <li>Watches</li>
+        <br>
+        <li>Belts and Wallets</li>
+        <br>
+        <li>Shoes</li>
+        <br>
+        <li>Bags</li>
+      </ul>
+    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvaskid">Kids</button>
+      <div class="offcanvas offcanvas-top" id="offcanvaskid">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        <div class="offcanvas-body">
+          <div class="row">
+            <div class="col-md-3">
+              <ul>
+        <li style="color: purple; font-weight: bold;">Boys & Girls (2+ Years)</li>
+        <br>
+        <li>Dresses</li>
+        <br>
+        <li>Boys Sets</li>
+        <br>
+        <li>Girls Sets</li>
+        <br>
+        <li>Ethnic Wear</li>
+        <br>
+        <li>Night Wear</li>
+        <br>
+        <li>Winter Wear</li>
+        <br>
+        <li>Top Wear</li>
+        <br>
+        <li>Bottom Wear</li>
+      </ul>
+</div>
+
+  
+<div class="col-md-3">
+  
+      <ul>
+        <li style="color: purple; font-weight: bold;">Infant 0-2 Years</li>
+        <br>
+        <li>Rompers</li>
+        <br>
+        <li>Baby Sets</li>
+        <br>
+        <li>Ethnic Wear</li>
+      </ul>
+    </div>
+
+<div class="col-md-3">
+  
+      <ul>
+        <br>
+        <li style="color: purple; font-weight: bold;">Toy & Accessories</li>
+        <br>
+        <li>Soft Toys</li>
+        <br>
+        <li>Footwear</li>
+        <br>
+        <li>Sationery</li>
+        <br>
+        <li>Watches</li>
+        <br>
+        <li>Bags & Backpacks</li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+  
+      <ul>
+        <br>
+        <li style="color: purple; font-weight: bold;">Baby Care </li>
+        <br>
+        <li>All Baby Care</li>
+        <br>
+        <li>Baby Bedding & Accessories</li>
+        <br>
+        <li>Newborn Care</li>
+      </ul>
+    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvaskitchen">Home & Kitchen</button>
+      <div class="offcanvas offcanvas-top" id="offcanvaskitchen">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        <div class="offcanvas-body">
+          <div class="row">
+            <div class="col-md-3">
+              <ul>
+        <li style="color: purple; font-weight: bold;">Kitchen & Appliances</li>
+        <br>
+        <li>Kitchen Tools</li>
+        <br>
+        <li>Storage & Organizers</li>
+        <br>
+        <li>Appliances</li>
+        <br>
+        <li>Cookware</li>
+        <br>
+        <li>Dinnerware</li>
+        <br>
+        <li>Bakeware</li>
+        <br>
+        <li>Glasses & Barwares</li>
+      </ul>
+</div>
+
+  
+<div class="col-md-3">
+  
+      <ul>
+        <li style="color: purple; font-weight: bold;">Home Furnishing</li>
+        <br>
+        <li>Bedsheets</li>
+        <br>
+        <li>Curtains & Shreers</li>
+        <br>
+        <li>Pillows, Cushions & Covers</li>
+        <br>
+        <li>Carpets & Doormats</li>
+        <br>
+        <li>Mattress Protectors</li>
+        <br>
+        <li>Sofa & Diwan Sets</li>
+      </ul>
+    </div>
+
+<div class="col-md-3">
+  
+      <ul>
+        <br>
+        <li style="color: purple; font-weight: bold;">Home Decor</li>
+        <br>
+        <li>Appliances Covers</li>
+        <br>
+        <li>Clocks</li>
+        <br>
+        <li>Showpieces</li>
+        <br>
+        <li>Paintings & Wall Decors</li>
+        <br>
+        <li>Stickers & Wallpapers</li>
+        <br>
+        <li>Lights</li>
+        <br>
+        <li>Gifts & Mugs</li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+  
+      <ul>
+        <br>
+        <li style="color: purple; font-weight: bold;">Home Improvement</li>
+        <br>
+        <li>Cleaning Products</li>
+        <br>
+        <li>Gardening Tools</li>
+        <br>
+        <li>Bathroom Accessories</li>
+        <br>
+        <li>Insect Protection</li>
+      </ul>
+    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasbeauty">Beauty & Health</button>
+      <div class="offcanvas offcanvas-top" id="offcanvasbeauty">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        <div class="offcanvas-body">
+          <div class="row">
+            <div class="col-md-3">
+              <ul>
+        <li style="color: purple; font-weight: bold;">Make Up</li>
+        <br>
+        <li>Make Up Kits</li>
+        <br>
+        <li>Brushes & Tools</li>
+        <br>
+        <li>Makeup Accessories</li>
+        <br>
+        <li>Foundation</li>
+        <br>
+        <li>Lipsticks</li>
+        <br>
+        <li>Eye Makeup</li>
+        <br>
+        <li>Nail Art</li>
+      </ul>
+</div>
+
+  
+<div class="col-md-3">
+  
+      <ul>
+        <li style="color: purple; font-weight: bold;">Skin Care</li>
+        <br>
+        <li>Face Masks & Peels</li>
+        <br>
+        <li>Facecare Products</li>
+        <br>
+        <li>HairCare Products</li>
+        <br>
+        <li>Bath & Shower</li>
+      </ul>
+    </div>
+
+<div class="col-md-3">
+  
+      <ul>
+        <li style="color: purple; font-weight: bold;">Baby & Mom Care</li>
+        <br>
+        <li>Baby Personal Care</li>
+        <br>
+        <li>Mom Care Products</li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+  
+      <ul>
+        <li style="color: purple; font-weight: bold;">Heathcare</li>
+        <br>
+        <li>Ear Buds & Cleaners</li>
+        <br>
+        <li>Sanitary Pads</li>
+        <br>
+        <li>Dental Care</li>
+        <br>
+        <li>Health Monitors</li>
+      </ul>
+    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<div class="c1">
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-2">
+    <a href="ethnicwear.html"><img src="e1.jpeg" alt="" class="rounded-circle">
+    </a>
+    <p>Ethnic Wear</p>
+  </div>
+  <div class="col-md-2">
+    <a href="western wear.html"><img src="w1.jpeg" alt="" class="rounded-circle">
+    </a>
+    <p>Western Wear</p>
+  </div>
+  <div class="col-md-2">
+    <a href="menwear.html"><img src="m1.jpeg" alt="" class="rounded-circle"></a>
+    <p>Men Wear</p>
+  </div>
+<div class="col-md-2">
+  <a href="homedecor.html"><img src="h1.jpeg" alt="" class="rounded-circle"></a>
+  <p>Home Decor</p>
+</div>
+<div class="col-md-2">
+  <a href="beauty.html"><img src="b1.jpeg" alt="" class="rounded-circle "></a>
+  <p>Beauty & Health</p>
+</div>
+<div class="col-md-2">
+  <a href="accessories.html"><img src="bag.jpeg" alt="" class="rounded-circle "></a>
+  <p>Accessories</p>
+</div>
+</div>
+</div>
+</div>
+<br><br>
+<div class="c2">
+<div class="container">
+<div class="row">
+  <div class="col-md-4">
+   <p> <i class="fa-solid fa-arrow-right-arrow-left"></i> 7 Days Easy Return </p>
+</div>
+<div class="col-md-4">
+  <p><i class="fa-solid fa-money-bill-1-wave"></i> Cash on Delivery </p>
+</div>
+<div class="col-md-4">
+  <p> <i class="fa-solid fa-truck"></i> Lowest Prices</p>
+</div>
+</div>
+</div>
+</div>
+<br><br>
+<div class="c3">
+<div class="container-fluid">
+  <div class="row">
+    
+    <div class="col-md-6">
+    <a href="product.html"><button>Shop Now</button></a>
+  </div>
+  <div class="col-md-6">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="l.jpg" alt="">
+      <br>
+      <p>Lehangas</p>
+    </div>
+    <div class="col-md-6">
+      <img src="men.webp" alt="">
+      <br>
+      <p>Mens Wear</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <img src="s1.jpeg" alt="">
+    <br>
+    <p>Sarees</p>
+  </div>
+  <div class="col-md-6">
+    <img src="j1.jpeg" alt="">
+    <br>
+    <p>Jewellery</p>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<br><br>
+<div class="c5">
+  <div id="carouselExample" class="carousel slide">
+ <div class="carousel-inner">
+ <div class="carousel-item active">
+ <img src="him.png" >
+ </div>
+ <div class="carousel-item">
+ <img src="me.jpeg">
+ </div>
+ <div class="carousel-item">
+ <img src="para.png">
+ </div>
+ <div class="carousel-item">
+ <img src="plam.png">
+ </div>
+ <div class="carousel-item">
+ <img src="wow.png">
+ </div>
+ <div class="carousel-item">
+ <img src="nivea.png">
+ </div>
+ <div class="carousel-item">
+ <img src="bata.jpeg">
+ </div>
+ </div>
+ <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+ <span class="carousel-control-prev-icon"></span>
+ </button>
+ <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+ <span class="carousel-control-next-icon" ></span>
+ </button>
+ </div>
+</div>
+<hr>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 style="text-align: center;">About Us</h2>
+            <h6 style="text-align: center;">Get to know about our store</h6>
+            <p style="text-align: center; color: grey;">Zyra is a leading online shopping platform that offers a wide range of products, including clothing, electronics, home decor, and more. The platform is known for its user-friendly interface and fast delivery services. With millions of satisfied customers, Zyra has become a go-to destination for people looking for high-quality products at affordable prices.</p>
+           <p style="text-align: center; color: grey;">Zyra is committed to providing a seamless shopping experience, with a focus on customer satisfaction and quality products. Whether you're looking for the latest fashion trends or the best deals on electronics, Zyra has got you covered.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="zyra.webp" alt="" class="rounded-circle" style="height: 300px; width: 500px; margin-left: 100px; border: 2px solid black;">
+            </div>
+</div>
+</div>
+<hr>
+<br><br><br><br>
+ <ul class="pagination">
+ <li class="page-item"><a class="page-link" href="ethnicwear.html">Previous</a></li>
+ <li class="page-item"><a class="page-link" href="western wear.html">1</a></li>
+ <li class="page-item"><a class="page-link" href="western wear.html">2</a></li>
+ <li class="page-item"><a class="page-link" href="menwear.html">3</a></li>
+  <li class="page-item"><a class="page-link" href="homedecor.html">4</a></li>
+   <li class="page-item"><a class="page-link" href="beauty.html">5</a></li>
+    <li class="page-item"><a class="page-link" href="accessories.html">6</a></li>
+ <li class="page-item"><a class="page-link" href="menwear.html">Next</a></li>
+ </ul>
+<br><br><br><br>
+<footer>
+  <div class="c6">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Shop Nom-Stop on Zyra</h3>
+          <br>
+          <ol>
+            <li style="list-style-type: circle;">Trusted by 2000+ Customers</li>
+            <br>
+            <li style="list-style-type: circle;">Cash on Delivery | Free Shipping</li>
+          </ol>
+          
+          <button class="btn btn-dark" ><i class="fa-brands fa-google-play" style="color: green; font-size: 20px;"></i> Google Play Store</button> <button class="btn btn-dark"><i class="fa-brands fa-apple" style="color: white; font-size: 20px;"></i> App Store</button>
+        </div>
+         <div class="col-md-2">
+          <ul>
+            <li>Legal and Policies</li>
+            <br>
+            <li>Zyra Tech Blog</li>
+            <br>
+            <li>Notices and Returns</li>
+          </ul>
+         </div>
+         <div class="col-md-3">
+          <h3>Reach Out to Us</h3>
+          <br>
+         <a href="https://www.facebook.com/" style="color: white;"><i class="fa-brands fa-facebook" style="color: rgb(62, 121, 250); font-size: 30px;"></i>  Facebook</a> 
+         <br><br>
+         <a href="https://www.instagram.com/accounts/login/?hl=en" style="color: white;"><i class="fa-brands fa-instagram" style="color: purple; font-size: 30px;"></i>  Instagram</a>
+         <br><br>
+         <a href="https://www.youtube.com/account" style="color: white;"><i class="fa-brands fa-youtube" style="color: red; font-size: 30px;"></i>  YouTube</a>
+         <br><br>
+         <a href="https://x.com/i/flow/login?lang=en" style="color: white;"><i class="fa-brands fa-square-x-twitter" style="color: white;font-size: 30px;"></i>  Twitter</a>
+         </div>
+         <div class="col-md-3">
+          <h3>Contact Us</h3>
+          <br>
+          <p style="color: grey;">Email: support@zyra.com</p>
+          <p style="color: grey;">Phone: +1-234-567-8901</p>
+          <p style="color: grey;">Address: Ghandipuram, Coimbatore, Tamil Nadu, 641035</p>
+          <p style="color: grey;">Customer Support: 24/7</p>
+          <p style="color: grey;">Feedback and Suggestions: feedback@zyra.com</p>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
